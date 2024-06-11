@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=runners-trial'
+      - 'POSTGRES_PASSWORD=kali'
+      - 'POSTGRES_USER=kali'
+    ports:
+      - '5432:5432' # expose port 5432 to host(docker) and map to 5432 on container(postgres instance)
